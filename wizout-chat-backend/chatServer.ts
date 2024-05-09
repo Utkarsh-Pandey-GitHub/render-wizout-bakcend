@@ -1,5 +1,6 @@
+const port =  process.env.PORT || 5000
 
-const io= require('socket.io')(5000,{
+const io= require('socket.io')(port,{
     cors:{
         allowedHeaders:["*"],
         origin:"*"
